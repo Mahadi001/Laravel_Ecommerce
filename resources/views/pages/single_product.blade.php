@@ -41,7 +41,7 @@
                     class="active"
                   >
                     <img
-                      src="img/product/single-product/s-product-s-2.jpg"
+                      src="{{asset('img/product/single-product/s-product-s-2.jpg')}}"
                       alt=""
                     />
                   </li>
@@ -50,7 +50,7 @@
                     data-slide-to="1"
                   >
                     <img
-                      src="img/product/single-product/s-product-s-3.jpg"
+                      src="{{asset('img/product/single-product/s-product-s-3.jpg')}}"
                       alt=""
                     />
                   </li>
@@ -59,7 +59,7 @@
                     data-slide-to="2"
                   >
                     <img
-                      src="img/product/single-product/s-product-s-4.jpg"
+                      src="{{asset('img/product/single-product/s-product-s-4.jpg')}}"
                       alt=""
                     />
                   </li>
@@ -68,21 +68,21 @@
                   <div class="carousel-item active">
                     <img
                       class="d-block w-100"
-                      src="img/product/single-product/s-product-1.jpg"
+                      src="{{asset('img/product/single-product/s-product-1.jpg')}}"
                       alt="First slide"
                     />
                   </div>
                   <div class="carousel-item">
                     <img
                       class="d-block w-100"
-                      src="img/product/single-product/s-product-1.jpg"
+                      src="{{asset('img/product/single-product/s-product-1.jpg')}}"
                       alt="Second slide"
                     />
                   </div>
                   <div class="carousel-item">
                     <img
                       class="d-block w-100"
-                      src="img/product/single-product/s-product-1.jpg"
+                      src="{{asset('img/product/single-product/s-product-1.jpg')}}"
                       alt="Third slide"
                     />
                   </div>
@@ -92,8 +92,8 @@
           </div>
           <div class="col-lg-5 offset-lg-1">
             <div class="s_product_text">
-              <h3>Faded SkyBlu Denim Jeans</h3>
-              <h2>$149.99</h2>
+              <h3>{{$product->name}}</h3>
+              <h2>${{$product->price}}.99</h2>
               <ul class="list">
                 <li>
                   <a class="active" href="#">
@@ -105,10 +105,7 @@
                 </li>
               </ul>
               <p>
-                Mill Oil is an innovative oil filled radiator with the most
-                modern technology. If you are looking for something that can
-                make your interior look awesome, and at the same time give you
-                the pleasant warm feeling during the winter.
+                {{$product->description}}
               </p>
               <div class="product_count">
                 <label for="qty">Quantity:</label>

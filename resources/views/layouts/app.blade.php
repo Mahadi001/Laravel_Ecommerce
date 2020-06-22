@@ -69,7 +69,7 @@
                     <nav class="navbar navbar-expand-lg navbar-light w-100">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <a class="navbar-brand logo_h" href="index.html">
-                            <img src="img/logo.png" alt="" />
+                            <img src="{{asset('img/logo.png')}}" alt="" />
                         </a>
                         <button
                             class="navbar-toggler"
@@ -115,14 +115,14 @@
                                                 <li class="nav-item">
                                                     <a
                                                         class="nav-link"
-                                                        href="{{route ('categories')}}"
-                                                        >Shop Category</a
+                                                        href="{{route ('products')}}"
+                                                        >Shop Products</a
                                                     >
                                                 </li>
                                                 <li class="nav-item">
                                                     <a
                                                         class="nav-link"
-                                                        href="{{route ('single_product')}}"
+                                                        href="#"
                                                         >Product Details</a
                                                     >
                                                 </li>
@@ -295,7 +295,7 @@
                             <div class="form-wrap" id="mc_embed_signup">
                                 <form
                                     target="_blank"
-                                    action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                                    action=""
                                     method="get"
                                     class="form-inline"
                                 >

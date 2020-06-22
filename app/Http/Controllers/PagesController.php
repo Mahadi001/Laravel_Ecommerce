@@ -6,14 +6,6 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
-    public function index(){
-        return view('pages.index');
-    }
-
-    public function categories(){
-        return view('pages.categories');
-    }
-
     public function check_out(){
         return view('pages.check_out');
     }
@@ -36,10 +28,6 @@ class PagesController extends Controller
 
     public function single_blog(){
         return view('pages.single_blog');
-    }
-
-    public function single_product(){
-        return view('pages.single_product');
     }
 
     public function tracking(){
